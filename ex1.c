@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 
 void principal(int n){
@@ -48,6 +48,43 @@ int main(){
     printf("\n");
     printf("%d", fatorial(n));
     fib(4);
+
+
+
+}*/
+
+typedef struct alunos{
+    char nome[20];
+    int sala;
+    float nota1;
+    float nota2;
+    float nota3;
+}Alunos;
+
+int main(){
+    int N = 2;
+    Alunos classes[N];
+
+    for(int i = 0; i < N; i++){
+        printf("DIGITE O NOME: ");
+        scanf("%s", &classes[N].nome);
+        printf("DIGITE A SALA: ");
+        scanf("%d", &classes[N].sala);
+        printf("DIGITE A NOTA 1: ");
+        scanf("%f", &classes[N].nota1);
+        printf("DIGITE A NOTA 2: ");
+        scanf("%f", &classes[N].nota2);
+        printf("DIGITE A NOTA 3: ");
+        scanf("%f", &classes[N].nota3); 
+    }
+
+    for(int i = 0; i < N; i++){
+        printf("%s", classes[N].nome);
+        printf("%s", classes[N].sala);
+        printf("%.2f", classes[N].nota1);
+        printf("%.2f", classes[N].nota2);
+        printf("%.2f", classes[N].nota3);
+    }
 
 
 
